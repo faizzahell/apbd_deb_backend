@@ -1,15 +1,15 @@
 module.exports = {
   apps: [
     {
-      name: "apbd_deb_sv_ugm_backend --9001",
-      script: "src/index.ts",
+      name: "apbd_deb_backend --3000",
+      script: "dist/index.js",
       env: {
         NODE_ENV: "development",
-        PORT: 3001,
+        PORT: 3000,
       },
       env_production: {
         NODE_ENV: "production",
-        PORT:9001,
+        PORT:9000,
       },
     },
   ],
